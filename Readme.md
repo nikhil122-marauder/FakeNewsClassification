@@ -1,10 +1,10 @@
-# Fake News Detection (Technical Test)
+# Fake News Detection 
 
 A full workflow for detecting fake vs. real news articles using the Kaggle Fake-and-Real News dataset, with data augmentation from FakeNewsNet. This project demonstrates robust modeling, feature engineering, and analysis on modern NLP tabular/text tasks.
 
 ---
 
-## 📦 Data Sources
+## Data Sources
 
 **Primary:**  
 - [Kaggle Fake-and-Real News](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news)  
@@ -16,7 +16,7 @@ A full workflow for detecting fake vs. real news articles using the Kaggle Fake-
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 1. **Clone this repo:**
     ```bash
@@ -40,7 +40,7 @@ A full workflow for detecting fake vs. real news articles using the Kaggle Fake-
 
 ---
 
-## 📝 Project Structure
+## Project Structure
 .
 ├── data/ # All CSVs here (Kaggle + FakeNewsNet)
 ├── notebooks/
@@ -51,7 +51,7 @@ A full workflow for detecting fake vs. real news articles using the Kaggle Fake-
 
 ---
 
-## 🧠 Workflow Overview
+## Workflow Overview
 
 ### **1. Data Preparation**
 - Combine and clean Kaggle and FakeNewsNet datasets.
@@ -79,7 +79,7 @@ A full workflow for detecting fake vs. real news articles using the Kaggle Fake-
 
 ---
 
-## 🏆 Results & Key Choices
+## Results & Key Choices
 
 | Phase               | Model                | Fake F1 | Real F1 | Accuracy | ROC AUC | Notes                                      |
 |---------------------|---------------------|---------|---------|----------|---------|--------------------------------------------|
@@ -93,7 +93,7 @@ A full workflow for detecting fake vs. real news articles using the Kaggle Fake-
 
 ---
 
-## 🔍 Analysis & Interpretation
+## Analysis & Interpretation
 
 - High scores on a single-source dataset are often due to data leakage (e.g., unique domains or publisher artifacts).
 - Data augmentation with FakeNewsNet, combined with feature pruning, provides a realistic and robust benchmark.
@@ -101,7 +101,7 @@ A full workflow for detecting fake vs. real news articles using the Kaggle Fake-
 
 ---
 
-## 📝 Methodological Notes
+## Methodological Notes
 
 - **No test data leakage:** All splits stratified by label, no metadata artifacts in features.
 - **All results are fully reproducible** via the notebook.
@@ -109,7 +109,7 @@ A full workflow for detecting fake vs. real news articles using the Kaggle Fake-
 
 ---
 
-## ⏭️ Future Work
+## Future Work
 
 - Fine-tune DistilBERT (or similar) for direct comparison with XGBoost.
 - Hyperparameter tuning (Optuna, GridSearch) for further improvements.
@@ -119,7 +119,7 @@ A full workflow for detecting fake vs. real news articles using the Kaggle Fake-
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [Kaggle Fake and Real News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news)
 - [FakeNewsNet Project](https://github.com/KaiDMML/FakeNewsNet)
